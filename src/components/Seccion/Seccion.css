@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400&display=swap');
+
+.container_seccion {
+    max-width: 1200px;
+    padding: 30px 50px 50px 50px;
+    
+} 
+.img-seccion {
+    border: 0px;
+    border-radius: 50px;
+    box-shadow: 2px 2px 4px gray;
+}
+.tam-letra {
+    font-family: 'Comic Neue', cursive;
+}
+.boton-carrito {
+    display: flex;
+    
+}
+
+
+
+
+@media  (min-width: 700px){
+    .img-seccion {
+        height: 15rem;
+        width: 15rem;
+        
+    }
+
+    .tam-letra {
+        font-size: 1.5rem;
+        text-align: center;
+        padding-top: 2rem;
+    }
+}
+@media (max-width: 443px){
+    .container_seccion {
+        display: flex;
+        flex-direction: column;
+        
+    }
+}
+    
+
+
+@media  (min-width: 1025px){
+    .img-seccion {
+        height: 25rem;
+        width:25rem;
+        
+    }
+
+    .tam-letra {
+        font-size: 2rem;
+        text-align: center;
+        font-weight: lighter;
+        padding-top: 8rem;
+    }
+}
+
+/* p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bolder;
+    font-size: 1rem;
+} */
+
+h1, h2, h3, h4{
+        font-family: 'Lato', sans-serif;
+}

@@ -1,0 +1,13 @@
+
+img {
+    width: 77%;
+    height: auto;
+    align-self: center;
+}
+p {
+    font-size: smaller;
+    margin: -7px;
+}
+.boton_compra {
+    margin-bottom: 10px;
+}

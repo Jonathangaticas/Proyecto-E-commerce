@@ -1,0 +1,33 @@
+/*Carrusel instagram*/
+
+.dropdown-menu {
+    --bs-dropdown-link-hover-bg: #0dcaf0;
+    --bs-dropdown-link-active-bg: #0dcaf0;
+}
+.containerIg {
+    padding-left:20px;
+    padding-right: 20px;
+}
+
+.logo{
+    height: 80px;
+    width: 80px;
+}
+/*Fin carrusel*/
+
+body {
+    background-color:aliceblue;
+    color: black;
+}
+
+.img-thumbnail {
+    background-color: aliceblue;
+}
+
+.card {
+    background-color: aliceblue;
+}
+
+.form-control {
+    border: 1px solid black;
+}

@@ -1,0 +1,15 @@
+.logo {
+    width: 100px;
+    height: 100px;
+    margin-bottom:  15px;
+    border-radius: 20px;
+    
+}
+.navbar {
+    background-color: #c1121f;
+    color: white;
+}
+.navbar h2 {
+    
+    text-align: center;    
+}

@@ -1,0 +1,25 @@
+
+.contador {
+    align-self: center;
+    margin:10px;
+}
+.producto_descripcion {
+    margin-left: 30px;
+}
+
+
+@media ( max-width: 530px) {
+    h3 { 
+        font-size: 20px;
+    }
+    h5 {
+        font-size: 13px;
+    }
+    h6 {
+        font-size: 13px;
+    }
+    .producto_descripcion {
+        margin-left: 0px;
+    }
+    
+}
