@@ -1,6 +1,7 @@
 .productoCarrito {
+    /* margin-top: 10rem; */
     max-width: 240px;
-    margin: 20px;
+
 }
 .button {
     margin: 0px 10px;
@@ -9,18 +10,26 @@
 }
 
 .resumen_compra {
-    
     font-size: 20px;
-    font-weight: 600;
-    
+    font-weight: 600;   
 }
+
 .boton_compra {
  margin-bottom: 10px;
 color: aliceblue;
 }
 
-
-a{
+a {
     color: aliceblue;
     text-decoration: none;
+}
+@media ( max-width: 767px) {
+    .carrito_container {
+        margin-top: 3rem;
+    }
+}
+@media ( max-width: 390px) {
+    .carrito_container {
+        margin-top: 5rem;
+    }
 }

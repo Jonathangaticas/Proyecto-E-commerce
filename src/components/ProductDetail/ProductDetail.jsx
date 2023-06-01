@@ -11,7 +11,7 @@ const ProductDetail = ({item}) => {
         <div className='contenedor_detalle'>
             <div className="d-flex justify-content-around align-items-center">
                 <div>
-                    <img src={item.img} alt="" className="img-fluid container justify-content-center" />
+                    <img src={item.img} alt="" className="img-fluid container justify-content-center p-0" />
                 </div>
                 <div className="container card-body row producto_descripcion">    
                     <h3 className="card-title">{item.nombre}</h3>

@@ -13,7 +13,7 @@ const Product = ({prod}) => {
             <p className="card-text prodStock">Stock: {prod.stock}</p>
             
           </div>
-          <Link className="nav-link btn btn-dark boton_compra" to={`/producto/${prod.id}`}>Comprar</Link>
+          <Link className="btn btn-dark boton_compra" to={`/producto/${prod.id}`}>Comprar</Link>
       </div>
       
     );

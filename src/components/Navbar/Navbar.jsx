@@ -5,9 +5,8 @@ import Secciones from './Secciones/Secciones';
 
 const Navbar = () => {
     return (
-      
+      <div className="contenedor_navbar_fantasma container">
         <nav className="navbar navbar-expand-md fixed-top">
-          
             <Link className="navbar-brand logo" to={"/"}><img src='./img/logo.png' alt='logo-mercado-vecinal' className='logo'/></Link>
             <h2 className="titulo">Bienvenidos a tu Mercado Vecino</h2>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,8 +19,9 @@ const Navbar = () => {
           <div className="boton-carrito">
             <BotonCarrito/> 
           </div>
-          
         </nav>
+      </div>
+        
        
     );
 }

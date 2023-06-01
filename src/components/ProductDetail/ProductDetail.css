@@ -6,8 +6,20 @@
 .producto_descripcion {
     margin-left: 30px;
 }
-
-
+@media ( max-width: 767px ) {
+    .contenedor_detalle {
+        margin-top: 4rem;
+    }
+}
+@media ( max-width: 551px) {
+    .contenedor_detalle {
+        margin-top: 2rem;
+    }
+    .producto_descripcion {
+        padding: 0px;
+    }
+    
+}
 @media ( max-width: 530px) {
     h3 { 
         font-size: 20px;
@@ -22,4 +34,9 @@
         margin-left: 0px;
     }
     
+}
+@media ( max-width: 390px) {
+    .contenedor_detalle {
+        margin-top: 5rem;
+    }
 }

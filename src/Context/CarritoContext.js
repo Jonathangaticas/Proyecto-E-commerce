@@ -1,9 +1,11 @@
 import {useContext, createContext, useState} from 'react'   
+import { toast } from 'react-toastify'
 const CarritoContext = createContext()
 export const useCarritoContext = () => useContext(CarritoContext) 
 
 export const CarritoProvider = (props) => { 
-    const [carrito, setCarrito] = useState([]) 
+    const [carrito, setCarrito] = useState([])
+    
     const isInCart = (id) => { 
         return carrito.find(producto => producto.id === id)
     } 
@@ -22,9 +24,9 @@ export const CarritoProvider = (props) => {
           setCarrito([...carrito, nuevoProducto]) 
       } 
     } 
-
     const emptyCart = () =>{ 
-          setCarrito([]) 
+        setCarrito([]) 
+        toast.info("Carrito Vacio")
     } 
 
     const removeItem = (id) => { 

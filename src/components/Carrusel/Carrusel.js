@@ -2,7 +2,7 @@ import React from 'react';
 import "./Carrusel.css"
 const Carrusel = () => {
     return (
-       <div className='carrusel_ancho_pagina container-fluid pt-4 row justify-content-center'>
+       <div id='carrusel' className='carrusel_ancho_pagina container-fluid pt-0 row justify-content-center'>
              <div className='contenedor_carrusel'>
             <div id="carouselExampleAutoplaying" className="carousel slide carrusel" data-bs-ride="carousel">
             <div className="carousel-inner">

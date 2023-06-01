@@ -1,0 +1,30 @@
+.container_checkout {
+    
+    margin-bottom: 2rem;
+    padding: 30px;
+    max-width: 400px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    background: #24303c;
+    color: white;
+    text-align: center;
+    box-shadow: 7px 13px 37px #000;
+}
+.container_checkout h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.control {
+    margin-bottom: 16px;
+}
+@media (max-width: 767px){
+    .container {
+        margin-top: 1.5rem;
+    }
+}
+@media (max-width: 390px){
+    .container {
+        margin: 40px 10px;
+        
+    }
+}
