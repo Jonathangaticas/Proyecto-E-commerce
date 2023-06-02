@@ -1,66 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400&display=swap');
 
-.container-seccion {
+
+.container_seccion {
     display: flex;
     flex-direction: row;
     max-width: 1200px;
     padding: 30px 50px 50px 50px;
-    
+    background-color: rgb(206, 195, 195);
 } 
 .img-seccion {
-    width: 25rem;
-    height: 25rem;
-    border: 0px;
-    border-radius: 50px;
-    box-shadow: 2px 2px 4px gray;
+    width: 16rem;
+    height: 16rem;
+    margin: 0px 30px 0px 30px;
 }
-
 .tam-letra {
     font-family: 'Comic Neue', cursive;
-    margin-left: 1rem;
     font-size: 25px;
-    text-align: center;
-    padding-top: 8rem;
-    
+}
+.container_seccion img {
+    box-shadow: 1px 8px 20px #000;
 }
 h1, h2, h3, h4{
     font-family: 'Lato', sans-serif;
 }
-
-@media  (max-width: 1025px){
-     .img-seccion {
-        height: 25rem;
-        width:25rem;
-    }
-    .tam-letra {
-        font-size: 25px;
-        text-align: center;
-        padding-top: 8rem;
-    }
-}
 @media  (max-width: 861px){
-    .container-seccion {
+    .container_seccion {
         display: flex;
         flex-direction: column;
-        margin: 20px;
-        padding-left: 2rem;
-        padding-right: 2rem;
+        align-items: center;
+        padding-bottom: 10px;
     }
     .img-seccion {
-        height: 12rem;
-        width: 12rem;   
+        height: 14rem;
+        width: 14rem;   
     }
     .tam-letra {
-        font-size: 1,5rem;
         text-align: center;
-        padding-top: 2rem;
         font-size: medium;
-        
+        margin: 1rem;
     }
 }
-
 @media (max-width: 443px){
-    .container-seccion {
+    .container_seccion {
         display: flex;
         flex-direction: column;
         margin-top: 20px;
@@ -69,13 +50,12 @@ h1, h2, h3, h4{
         width: 200px;
         height: 200px;
     }
-    .tam-letra {
-        padding-top: 3rem;
-        padding-left: 20px;
-        padding-right: 20px;
-        font-weight: medium;
 
-        
-    }
 } 
+@media (max-width: 390px) {
+    .parrafo {
+        padding: 0px;
+        border: 0px;
+    }
+}
 

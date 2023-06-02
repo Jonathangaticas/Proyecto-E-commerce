@@ -1,7 +1,8 @@
+.carrito_container {
+    gap: 10px
+}
 .productoCarrito {
-    /* margin-top: 10rem; */
     max-width: 240px;
-
 }
 .button {
     margin: 0px 10px;

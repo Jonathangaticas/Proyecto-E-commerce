@@ -1,0 +1,16 @@
+.carrusel_instagram img {
+    box-shadow: 3px 5px 3px #3a3636;
+}
+@media (max-width: 575px) {
+    .carrusel_instagram img {
+        width: 220px;
+        height: 220px;
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 390px) {
+    .carrusel_instagram {
+        
+    }
+}
+

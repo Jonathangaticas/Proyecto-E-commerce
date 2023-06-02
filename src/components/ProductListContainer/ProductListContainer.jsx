@@ -43,7 +43,6 @@ const ProductListContainer = () => {
                 <Carrusel/>
                 {productos} 
                 <Seccion/>
-                <h4 className='text-center'>Mira nuestras ofertas e ideas de recetas en nuestro instagram.</h4>
                 <CarruselInstagram/>
             </div>
 
