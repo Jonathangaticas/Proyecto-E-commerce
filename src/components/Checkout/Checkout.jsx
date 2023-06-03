@@ -3,9 +3,10 @@ import { useRef } from "react";
 import { useCarritoContext } from "../../Context/CarritoContext";
 import { useNavigate } from "react-router-dom";
 import { toast } from 'react-toastify' 
+import { updateProducto, getProducto } from "../../assets/firebase";
 
 const Checkout = () => {
-    const { totalPrice, emptyCart } = useCarritoContext()
+    const { carrito, totalPrice, emptyCart } = useCarritoContext()
     const datosFormulario = useRef()
     let navigate = useNavigate()
     const consultarFormulario = (e) => {
@@ -13,6 +14,16 @@ const Checkout = () => {
 
         const datForm = new FormData(datosFormulario.current)
         const cliente = Object.fromEntries(datForm) 
+        //Descuenta Stock
+        const aux = [...carrito ]
+        //Aca descuenta Stock
+        aux.forEach(prodCarrito => {
+            getProducto(prodCarrito.id).then(prodBDD => {
+                prodBDD.stock -= prodCarrito.cant
+                updateProducto(prodCarrito.id, prodBDD)
+            })
+        })
+        //Aca Finaliza la compra
         toast.success(`Hola ${cliente.nombreCompleto}, su compra por un total de $ ${new Intl.NumberFormat('de-DE').format(totalPrice())} ha sido realizada correctamente`)
         emptyCart()
         e.target.reset()

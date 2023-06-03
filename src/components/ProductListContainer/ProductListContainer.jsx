@@ -1,4 +1,4 @@
-import axios from 'axios';
+
 import './ProductListContainer.css'
 import { useState, useEffect } from "react";
 import {useParams} from 'react-router-dom';
@@ -6,33 +6,29 @@ import ProductList from "../ProductList/ProductList";
 import Seccion from '../Seccion/Seccion';
 import Carrusel from '../Carrusel/Carrusel';
 import CarruselInstagram from '../CarruselInstagram/CarruselInstagram';
-
+//Firebase
+import { getProductos } from '../../assets/firebase'
 const ProductListContainer = () => {
     const [ productos, setProductos] = useState([]);
     const {categoria}= useParams()
 
     useEffect(() => {
+        
         if (categoria) {
-            
-            //fetch('http://localhost:3004/productos')
-            //.then(promise => promise.json())
-            axios.get('http://localhost:3004/productos')
-            .then(promise => promise.data)
+            getProductos()
             .then(items => {
                 const products = items.filter(producto => 
-                producto.idCategoria === parseInt(categoria)) 
+                producto.idCategoria === parseInt(categoria))
+                .filter(prod => prod.stock > 0) 
                 const itemsFiltrados = ProductList({products})
                 setProductos(itemsFiltrados)
         })}
         else {
-            
-            //fetch('http://localhost:3004/productos')
-            //.then(promise => promise.json())
-            axios.get('http://localhost:3004/productos')
-            .then (promise => promise.data)
-            .then(products => {
-                const items = ProductList({products})
-                setProductos(items)
+            getProductos()
+            .then(items => { //Aca filtra los productos por stock
+                const products = items.filter(prod => prod.stock > 0)
+                const itemsFiltrados = ProductList({products})
+                setProductos(itemsFiltrados)
         })}
     }, [categoria])
 

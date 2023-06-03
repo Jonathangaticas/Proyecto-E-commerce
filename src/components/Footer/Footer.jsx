@@ -20,7 +20,7 @@ const Footer = () => {
       <div className="col-md-2 enlaces">
         <h5>WHATSAPP</h5> 
         <a href="https://api.whatsapp.com/send?phone=+56956098529&text=Quiero%20mas%20informacion%20"><img className="icon" src="./img/whatsapp.png" alt="whatsapp" target="_blank" rel="noopener noreferrer" /></a>
-        <p>Escribenos al 58194221, de lunes a sábado de 8 a 20 hrs y domingo de 8 a 13 hrs.</p>
+        <p>Escribenos al +56956098529, de lunes a sábado de 8 a 20 hrs y domingo de 8 a 13 hrs.</p>
       </div>
       <div className="col-md-2 enlaces">
         <h5>REDES SOCIALES</h5>      
