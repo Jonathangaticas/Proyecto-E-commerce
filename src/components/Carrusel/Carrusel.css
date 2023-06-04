@@ -47,12 +47,19 @@
 }
 @media (max-width: 390px) {
     .carrusel_ancho_pagina {
-        margin-top: 80px;
+        margin-top: 10px;
+        
+
     }
 }
-@media (max-width: 335px) {
+@media (max-width: 366px) {
     .carrusel_ancho_pagina {
         margin-bottom: -200px ;
+    }
+}
+@media (max-width: 284px) {
+    .carrusel_ancho_pagina {
+        margin-bottom: -230px;
     }
 }
 
