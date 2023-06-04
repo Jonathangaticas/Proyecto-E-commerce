@@ -9,7 +9,6 @@ const BotonCarrito = () => {
          </button> 
          <span className='btn btn-light m-0'>{getItemQuantity()}</span>
       </div>
- 
    ); 
 } 
 

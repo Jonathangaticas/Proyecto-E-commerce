@@ -60,7 +60,6 @@ const CarruselDeInstagram = () => {
             <span className="visually-hidden">Siguiente</span>
           </button>
       </div>
-
     </div>
     );
 }

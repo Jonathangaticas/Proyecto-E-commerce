@@ -32,8 +32,6 @@ const ProductListContainer = () => {
         })}
     }, [categoria])
 
-
-
     return (
             <div className="row cardProducto">
                 <Carrusel/>
@@ -41,8 +39,6 @@ const ProductListContainer = () => {
                 <Seccion/>
                 <CarruselInstagram/>
             </div>
-
-
     );
 }
 

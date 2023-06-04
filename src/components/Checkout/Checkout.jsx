@@ -16,7 +16,6 @@ const Checkout = () => {
         const cliente = Object.fromEntries(datForm) 
         //Descuenta Stock
         const aux = [...carrito ]
-        //Aca descuenta Stock
         aux.forEach(prodCarrito => {
             getProducto(prodCarrito.id).then(prodBDD => {
                 prodBDD.stock -= prodCarrito.cant

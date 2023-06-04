@@ -1,20 +1,17 @@
 .contenedor_navbar_fantasma {
     width: auto;
     height: 170px;
-    
 }
 .logo {
     width: 100px;
     height: 100px;
     margin-bottom:  15px;
     border-radius: 20px;
-    
 }
 .navbar {
     background-color: #c1121f;
     color: white;
     padding: 1rem;
-
 }
 .navbar h2 {
     text-align: center;    

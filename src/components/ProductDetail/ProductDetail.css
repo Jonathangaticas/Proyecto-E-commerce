@@ -1,4 +1,3 @@
-
 .contador {
     align-self: center;
     margin:10px;
@@ -14,22 +13,17 @@
         margin-bottom: 30px;
     }
 }
-
 @media ( max-width: 530px) {
     .contenedor_detalle_sub {
         margin-bottom: 50px;
     }
-   
-    
-    
 }
 @media ( max-width: 390px) {
     .contenedor_detalle_sub {
         margin-top: -30px;
         display: flex;
         flex-direction: column;
-        margin-bottom: 0px;
-        
+        margin-bottom: 0px; 
     }
     .producto_descripcion {
         padding: 0px;

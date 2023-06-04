@@ -2,7 +2,6 @@ import "./Secciones.css"
 import React from 'react';
 import Categorias from '../Categorias/Categorias'  
 import {Link} from 'react-router-dom';
-
 const Secciones = () => {
     return (
         <ul className="navbar-nav me-auto">

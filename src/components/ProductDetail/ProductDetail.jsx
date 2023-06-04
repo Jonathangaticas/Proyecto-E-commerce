@@ -6,7 +6,6 @@ const ProductDetail = ({item}) => {
     const onAdd = (contador) => {
         addProduct(item, contador)
     }
-  
     return (
         <div className='contenedor_detalle'>
             <div className="d-flex justify-content-around align-items-center contenedor_detalle_sub">
@@ -24,7 +23,6 @@ const ProductDetail = ({item}) => {
                 <Contador stock={item.stock} onAdd={onAdd} />
             </div>
         </div>
-            
     );
 }
 

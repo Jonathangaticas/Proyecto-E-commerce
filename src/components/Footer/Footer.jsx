@@ -29,9 +29,6 @@ const Footer = () => {
         <a className= "footerA" href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer"> <img className="icon" src="./img/twitter.png" alt="twitter" /></a>
       </div>
 </div>
-
-
-        
     );
 }
 
